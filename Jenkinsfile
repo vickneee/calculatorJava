@@ -49,9 +49,9 @@ pipeline {
                         // First line is Mac local sonar-scanner path -> use correct path
                         sh """
                             /usr/local/sonarscanner/bin/sonar-scanner \
-                            -Dsonar.projectKey=LectureDemo_SonarQube \
+                            -Dsonar.projectKey=calculatorJava \
                             -Dsonar.sources=src \
-                            -Dsonar.projectName=LectureDemo_SonarQube \
+                            -Dsonar.projectName=calculatorJava \
                             -Dsonar.host.url=http://localhost:9000 \
                             -Dsonar.login=${env.SONAR_TOKEN} \
                             -Dsonar.java.binaries=target/classes \
